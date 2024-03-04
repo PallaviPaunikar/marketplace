@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Manrope-SemiBold.otf">
+            <string>Manrope-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="quantityCollCell" customModule="Markrtplace" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hi0-Zn-Gql">
+                        <rect key="frame" x="8" y="8" width="104" height="34"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Liters" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4sc-Qh-fe9">
+                                <rect key="frame" x="5" y="9" width="94" height="16"/>
+                                <fontDescription key="fontDescription" name="Manrope-SemiBold" family="Manrope" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4sc-Qh-fe9" firstAttribute="centerY" secondItem="hi0-Zn-Gql" secondAttribute="centerY" id="BVb-yN-hmR"/>
+                            <constraint firstItem="4sc-Qh-fe9" firstAttribute="leading" secondItem="hi0-Zn-Gql" secondAttribute="leading" constant="5" id="Jra-bZ-PBB"/>
+                            <constraint firstAttribute="trailing" secondItem="4sc-Qh-fe9" secondAttribute="trailing" constant="5" id="SNI-tw-wDd"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" name="GreyScale"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="hi0-Zn-Gql" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="YpS-g8-ubv"/>
+                <constraint firstAttribute="bottom" secondItem="hi0-Zn-Gql" secondAttribute="bottom" constant="8" id="cG7-AS-kqH"/>
+                <constraint firstItem="hi0-Zn-Gql" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="ifP-vB-bcs"/>
+                <constraint firstAttribute="trailing" secondItem="hi0-Zn-Gql" secondAttribute="trailing" constant="8" id="lWi-Od-KxQ"/>
+            </constraints>
+            <size key="customSize" width="120" height="50"/>
+            <point key="canvasLocation" x="9.1603053435114496" y="19.718309859154932"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="GreyScale">
+            <color red="0.71399998664855957" green="0.71399998664855957" blue="0.71399998664855957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

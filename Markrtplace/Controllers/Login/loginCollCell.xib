@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Manrope-Bold.otf">
+            <string>Manrope-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gTV-IL-0wX" customClass="loginCollCell" customModule="Markrtplace" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="117" height="118"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="117" height="118"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FR9-H8-khK">
+                        <rect key="frame" x="5" y="5" width="107" height="108"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="catimg" translatesAutoresizingMaskIntoConstraints="NO" id="QFc-jz-Xfy">
+                                <rect key="frame" x="2" y="2" width="103" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="I0w-Vb-hfZ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYn-7w-Cbm">
+                                <rect key="frame" x="2" y="52" width="103" height="32"/>
+                                <string key="text">Uniform &amp; 
+Other Products</string>
+                                <fontDescription key="fontDescription" name="Manrope-Bold" family="Manrope" pointSize="12"/>
+                                <color key="textColor" name="ElementLableColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="oYn-7w-Cbm" secondAttribute="trailing" constant="2" id="16l-vN-URS"/>
+                            <constraint firstItem="QFc-jz-Xfy" firstAttribute="leading" secondItem="FR9-H8-khK" secondAttribute="leading" constant="2" id="5BH-g1-2eq"/>
+                            <constraint firstItem="QFc-jz-Xfy" firstAttribute="top" secondItem="FR9-H8-khK" secondAttribute="top" constant="2" id="9MW-Rb-o8g"/>
+                            <constraint firstAttribute="trailing" secondItem="QFc-jz-Xfy" secondAttribute="trailing" constant="2" id="DYg-Fa-BRx"/>
+                            <constraint firstItem="oYn-7w-Cbm" firstAttribute="top" secondItem="QFc-jz-Xfy" secondAttribute="bottom" id="Lky-Mh-Dcc"/>
+                            <constraint firstItem="oYn-7w-Cbm" firstAttribute="leading" secondItem="FR9-H8-khK" secondAttribute="leading" constant="2" id="wbD-hW-K3l"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="FR9-H8-khK" secondAttribute="bottom" constant="5" id="4LG-yp-MaT"/>
+                <constraint firstItem="FR9-H8-khK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="Jne-zz-qTO"/>
+                <constraint firstItem="FR9-H8-khK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="apu-pl-h6p"/>
+                <constraint firstAttribute="trailing" secondItem="FR9-H8-khK" secondAttribute="trailing" constant="5" id="rJ7-Gc-gJ2"/>
+            </constraints>
+            <size key="customSize" width="117" height="116"/>
+            <connections>
+                <outlet property="elementimg" destination="QFc-jz-Xfy" id="hCH-bm-F6h"/>
+                <outlet property="elementtitle" destination="oYn-7w-Cbm" id="N8q-vd-PiQ"/>
+            </connections>
+            <point key="canvasLocation" x="100" y="42.95774647887324"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="catimg" width="56" height="42"/>
+        <namedColor name="ElementLableColor">
+            <color red="0.28200000524520874" green="0.28200000524520874" blue="0.28200000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

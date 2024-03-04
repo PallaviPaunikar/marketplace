@@ -1,0 +1,6 @@
+framework module Pods_MarkrtplaceTests {
+  umbrella header "Pods-MarkrtplaceTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

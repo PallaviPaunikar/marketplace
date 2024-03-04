@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="probannerCVC" customModule="Markrtplace" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="294" height="69"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="294" height="69"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="listbannerimg" translatesAutoresizingMaskIntoConstraints="NO" id="Qrk-Lz-7DF">
+                        <rect key="frame" x="5" y="5" width="284" height="59"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Qrk-Lz-7DF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="jKo-QN-dVm"/>
+                <constraint firstAttribute="trailing" secondItem="Qrk-Lz-7DF" secondAttribute="trailing" constant="5" id="lXT-BN-PgR"/>
+                <constraint firstAttribute="bottom" secondItem="Qrk-Lz-7DF" secondAttribute="bottom" constant="5" id="oxK-Dc-k4c"/>
+                <constraint firstItem="Qrk-Lz-7DF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="xuO-0L-e5y"/>
+            </constraints>
+            <size key="customSize" width="294" height="69"/>
+            <point key="canvasLocation" x="174.04580152671755" y="26.408450704225352"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="listbannerimg" width="335" height="80"/>
+    </resources>
+</document>
